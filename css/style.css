@@ -1,0 +1,56 @@
+body {
+  font-family: "Montserrat-Light";
+  font-size: 10px;
+  line-height: 24px;
+  background-color: white;
+  color: #8c8c8c;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+.header {
+  background-image: url(/pictures/background-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header-top {
+  border: 1px solid blue;
+  display: flex;
+}
+.header-top .header-logo {
+  border: 1px solid yellow;
+  width: 500px;
+  height: 100px;
+  flex-direction: row;
+}
+.header-top .header-logo img {
+  margin: 0;
+  padding: 0;
+  border: 1px solid green;
+}
+.header-top .header-logo p {
+  border: 1px solid green;
+  font-family: "Raleway";
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: normal;
+  color: #fff;
+  font-style: normal;
+  letter-spacing: -1.36px;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+.header-top .navigation {
+  color: white;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  border: 1px solid red;
+}

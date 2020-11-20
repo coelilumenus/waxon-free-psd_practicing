@@ -6,57 +6,110 @@ body {
     color: #8c8c8c;
     padding: 0;
     margin: 0;
-}
-
-.container {
-
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 40px;
-}
-
+  }
+  
 .header {
-    background-image: url(/pictures/background-header.jpg);
-    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: url("../pictures/background-header.jpg");
     background-repeat: no-repeat;
-}
-
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 20% 70% 10%;
+  }
+  
 .header-top {
-    border: 1px solid blue;
+    border: 1px solid red;
+    grid-row: 1;
+    padding: 40px 0 0 0;
+    margin: 0 auto;
     display: flex;
-    .header-logo {
-        border: 1px solid yellow;
-        width: 500px;
-        height: 100px;
-        flex-direction: row;
-        img {
-            margin: 0;
-            padding: 0;
-            border: 1px solid green;
-        }
-        p {
-            border: 1px solid green;
-            font-family: "Raleway";
-            font-size: 34px;
-            font-weight: 400;
+    max-width: 1170px;
+    
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        padding: 22px 0;
+
+        a {
+            color: #ffffff;
+            font-family: "Montserrat";
+            font-size: 14px;
+            font-weight: 300;
             font-style: normal;
             letter-spacing: normal;
             line-height: normal;
-            color: #fff;
-            font-style: normal;
+            text-decoration: none;
+            margin-right: 30px;
+
+            &:hover {
+                color: #c7b299;
+            }
+
+            &:active {
+                color: #776249;
+            }
+        }
+
+        .icons {
+            margin-left: 20px;
+            margin-top: -5px;
+            display: flex;
+
+            .icon-basket svg {
+                fill: #fff;
+
+                &:hover {
+                    fill: #c7b299;
+                }
+
+                &:active {
+                    fill: #776249;
+                }
+            }
+
+            .icon-search svg {
+                fill: #fff;
+
+                &:hover {
+                    fill: #c7b299;
+                }
+
+                &:active {
+                    fill: #776249;
+                }
+            }
+
+        }
+        
+    }
+
+    .header-logo {
+        width: 181px;
+        height: 56px;
+        display: inline-flex;
+        flex-wrap: nowrap;
+        margin-right: 70px;
+
+        p {
+            color: #ffffff;
+            font-family: "Raleway";
+            font-size: 34px;
+            font-weight: 300;
+            align-self: center;
             letter-spacing: -1.36px;
             line-height: normal;
-            margin: 0;
-            padding: 0;
         }
     }
-    .navigation {
-        color: white;
-        display: flex;
-        padding:0;
-        margin: 0;
-        border: 1px solid red;
-    }
-}
+  
+  }
+  
+.header-middle {
+    border: 1px solid red;
+    grid-row: 2;
+  }
+  
+.header-bottom {
+    border: 1px solid red;
+    grid-row: 3;
+  }
